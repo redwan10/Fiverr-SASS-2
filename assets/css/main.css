@@ -301,6 +301,16 @@ section.history-area {
   position: relative;
 }
 
+.projects-area-wrapper form.projects-search .single-input .nice-select {
+  /* Extra small devices (portrait phones, less than 768px) */
+}
+
+@media (max-width: 767.98px) {
+  .projects-area-wrapper form.projects-search .single-input .nice-select {
+    width: 250px !important;
+  }
+}
+
 .projects-area-wrapper form.projects-search .single-input input[type="text"] {
   width: 300px;
   height: 42px;
@@ -309,6 +319,13 @@ section.history-area {
   font-size: 14px;
   border: solid 1px #5B5B5B;
   font-weight: normal;
+  /* Extra small devices (portrait phones, less than 768px) */
+}
+
+@media (max-width: 767.98px) {
+  .projects-area-wrapper form.projects-search .single-input input[type="text"] {
+    width: 250px !important;
+  }
 }
 
 .projects-area-wrapper form.projects-search .single-input button[type="submit"] {
