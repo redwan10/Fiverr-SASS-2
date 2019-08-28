@@ -256,7 +256,8 @@ header {
     }
     .header-wrap.bg-2 {
         background-image: none;
-        background-color: #101318;
+        background: radial-gradient(38% 58%, #373942 0%, #0C1118 64%), linear-gradient(-180deg, rgba(0,0,0,0.36) 0%, rgba(0,0,0,0.36) 100%);
+        background-image: radial-gradient(38% 58%, #373942 0%, #0C1118 64%);
     }
 }
 
