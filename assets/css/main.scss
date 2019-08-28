@@ -207,43 +207,49 @@ nav {
 
 // header
 header {
-    background-image: url(https://images.unsplash.com/photo-1515324163154-432e2126beaa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
-    background-size: cover;
-    background-position: center;
-    min-height: 700px;
-    padding-top: 500px;
-    position: relative;
+    .header-wrap{
+        background-image: url(https://images.unsplash.com/photo-1515324163154-432e2126beaa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+        background-size: cover;
+        background-position: center;
+        min-height: 700px;
+        padding-top: 500px;
+        position: relative;
 
-    &:before {
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 100%;
-        background: #000;
-        opacity: .6;
-        left: 0;
-        top: 0;
-    }
-
-    .header-text {
-        h1 {
-            color: #fff;
-            margin-bottom: 0px;
-            text-transform: uppercase;
+        &:before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: .6;
+            left: 0;
+            top: 0;
         }
 
-        p {
-            color: #fff;
+        .header-text {
+            h1 {
+                color: #fff;
+                margin-bottom: 0px;
+                text-transform: uppercase;
+            }
+
+            p {
+                color: #fff;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px){
+            min-height: 550px;
+            padding-top: 400px;
+        }
+        @media (max-width: 768px){
+            min-height: 400px;
+            padding-top: 250px;
         }
     }
-
-    @media (min-width: 768px) and (max-width: 991px){
-        min-height: 550px;
-        padding-top: 400px;
-    }
-    @media (max-width: 768px){
-        min-height: 400px;
-        padding-top: 250px;
+    .header-wrap.bg-2 {
+        background-image: none;
+        background-color: #101318;
     }
 }
 

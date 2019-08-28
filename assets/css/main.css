@@ -201,7 +201,7 @@ nav .nav-bar li.language:hover ul.sub-lang {
   visibility: visible;
 }
 
-header {
+header .header-wrap {
   background-image: url(https://images.unsplash.com/photo-1515324163154-432e2126beaa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
   background-size: cover;
   background-position: center;
@@ -210,7 +210,7 @@ header {
   position: relative;
 }
 
-header:before {
+header .header-wrap:before {
   position: absolute;
   content: '';
   width: 100%;
@@ -221,28 +221,33 @@ header:before {
   top: 0;
 }
 
-header .header-text h1 {
+header .header-wrap .header-text h1 {
   color: #fff;
   margin-bottom: 0px;
   text-transform: uppercase;
 }
 
-header .header-text p {
+header .header-wrap .header-text p {
   color: #fff;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  header {
+  header .header-wrap {
     min-height: 550px;
     padding-top: 400px;
   }
 }
 
 @media (max-width: 768px) {
-  header {
+  header .header-wrap {
     min-height: 400px;
     padding-top: 250px;
   }
+}
+
+header .header-wrap.bg-2 {
+  background-image: none;
+  background-color: #101318;
 }
 
 .section-title {
